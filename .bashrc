@@ -13,3 +13,5 @@ alias du="du -ch --max-depth=1"
 alias e='emacsclient -t'
 
 source ~/.bashrc_custom
+
+source ~/.ghcup/env

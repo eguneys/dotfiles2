@@ -24,6 +24,10 @@
 (setq create-lockfiles nil)
 
 
+(setq custom-file "~/.emacs.d/.emacs-custom.el")
+(load custom-file)
+
+
 (load "defuns-config.el")
 (global-set-key "\C-h" 'backward-delete-char)
 (global-set-key "\C-n" 'next-line)
@@ -31,7 +35,15 @@
 (global-set-key "\M-n" '(lambda () (interactive) (next-line 5)))
 (global-set-key "\M-l" '(lambda () (interactive) (previous-line 5)))
 
+(global-set-key "\M-p" 'recenter-top-bottom)
 
 (global-set-key "\M-h" 'backward-delete-word)
 
 (global-set-key "\M-o" 'other-window)
+
+
+(global-set-key (kbd "C-o") (kbd "C-a C-j TAB C-p TAB C-e"))
+
+(global-set-key (kbd "M-t") (kbd "C-f M-b M-d"))
+
+(add-hook 'after-init-hook (lambda () (load "~/.emacs.d/after-init.el")))
