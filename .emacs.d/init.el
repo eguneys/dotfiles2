@@ -47,3 +47,8 @@
 (global-set-key (kbd "M-t") (kbd "C-f M-b M-d"))
 
 (add-hook 'after-init-hook (lambda () (load "~/.emacs.d/after-init.el")))
+
+;; keyboard b debuckle
+(global-set-key "\M-m" 'backward-word)
+(global-set-key "\C-m" 'backward-char) 
+ 
