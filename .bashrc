@@ -14,4 +14,4 @@ alias e='emacsclient -t'
 
 source ~/.bashrc_custom
 
-source ~/.ghcup/env
+# source ~/.ghcup/env
