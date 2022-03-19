@@ -15,3 +15,6 @@ alias e='emacsclient -t'
 source ~/.bashrc_custom
 
 # source ~/.ghcup/env
+. "$HOME/.cargo/env"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

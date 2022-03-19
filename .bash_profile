@@ -13,3 +13,4 @@ export LC_MESSAGES="C"
 
 export PATH=~/.yarn/bin:$PATH
 export PATH=~/programs/LOVE:$PATH
+. "$HOME/.cargo/env"
